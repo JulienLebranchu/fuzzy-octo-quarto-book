@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "fuzzy-octo-quarto-book"
+  author: "Norah Jones"
+  date: "1/29/2024"
+  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - part: stats.qmd
+      chapters: 
+      - stats/content.qmd
+    - part: it.qmd
+      chapters: 
+      - it/content.qmd
+  appendices:
+    - references.qmd
+    - resources.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
